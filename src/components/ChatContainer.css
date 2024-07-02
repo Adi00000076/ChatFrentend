@@ -1,0 +1,84 @@
+/* ChatContainer.css */
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensure full viewport height */
+
+  background: linear-gradient(135deg, #eff2f6 , #cddde0, #eff2f6 );
+  
+  
+
+
+  
+}
+
+.home {
+  flex: 1; /* Takes remaining space */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Enable vertical scrolling for chat content */
+}
+
+.chats-header {
+  background-color: #ffffff; /* Header background color */
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Example box shadow for header */  
+  background: linear-gradient(135deg, #06b2bc, #08bc97, #04abd7);
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space items evenly across the header */
+}
+
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.avatar {
+  height: 36px;
+}
+
+.logout {
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logout-icon {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    padding: 10px; /* Example padding for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .chats-header {
+    padding: 5px; /* Adjust header padding for smaller screens */
+  }
+}
+
+
+
+
+
+
+
+
+
